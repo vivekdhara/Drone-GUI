@@ -37,11 +37,6 @@
   - [Installation](#installation)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
-- [Support](#support)
-- [Project assistance](#project-assistance)
-- [Contributing](#contributing)
-- [Authors & contributors](#authors--contributors)
-- [Security](#security)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
