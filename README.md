@@ -88,7 +88,7 @@
 > What are the project requirements/dependencies?
 
 ### Installation
-
+#### 1. Gazebo, and Wen Dependecies
 > **[?]**
 > Describe how to install and get started with the project.
 
