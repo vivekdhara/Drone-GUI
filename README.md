@@ -71,16 +71,14 @@
 </td></tr></table>
 
 ### Built With
-
-> **[?]**
-> Please provide the technologies that are used in the project.
+Uses Flask to run Web interface along with ROS,Ardupilot Open Source Frameworks
 
 ## Getting Started
 
+
 ### Prerequisites
 
-Tested With Ardupilot Stable Release on Ubuntu 18.04.
-
+Tested on Fresh Ubuntu 18.04 install (stable ardupilot build)
 ### Installation
 
 
