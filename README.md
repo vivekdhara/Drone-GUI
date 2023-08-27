@@ -88,9 +88,84 @@
 > What are the project requirements/dependencies?
 
 ### Installation
-#### 1. Gazebo, and Wen Dependecies
-> **[?]**
-> Describe how to install and get started with the project.
+
+
+#### 1. Gazebo, and Web Dependecies
+Gazebo is an open-source 3D robotics simulator. Gzweb is a WebGL client for Gazebo. It is a front-end graphical interface to gazebo and provides visualization of the simulation even on mobile devices
+
+```
+sudo apt install gazebo9 libgazebo9-dev
+```
+
+```
+sudo apt install curl
+` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+sudo apt install
+libjansson-dev libboost-dev imagemagick libtinyxml-dev mercurial cmake build-essential
+nvm install 8
+source ~/.bashrc
+sudo apt install git
+cd ~; git clone https://github.com/osrf/gzweb
+cd ~/gzweb
+git checkout gzweb_1.4.1
+echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
+npm run deploy --- -m
+```
+
+### 2. ROS 
+
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt update
+sudo apt install ros-melodic-ros-base
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+source /opt/ros/melodic/setup.bash
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo rosdep init
+rosdep update
+```
+
+### 3.MAVROS
+
+```
+sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras ros-melodic-mavros-msgs
+wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+sudo bash ./install_geographiclib_datasets.sh   
+```
+
+
+### 4. Ardupilot
+
+```
+git clone https://github.com/r0chin/ardupilot
+git config --global url."https://github.com".insteadOf git://github
+cd ardupilot/
+git submodule update --init --recursive
+sudo Tools/scripts/install-prereqs-ubuntu.sh -y
+sudo ~/.profile
+sim_vehicle.py -v ArduCopter -f gazebo-iris --map --console```
+```
+
+### 5. Ardupilot Gazebo Plugin
+
+```
+git clone https://github.com/khancyr/ardupilot_gazebo
+cd ardupilot_gazebo
+mkdir build
+cd build
+cmake ..
+make -j4
+sudo make install
+echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+echo 'export GAZEBO_RESOURCE_PATH=~/ardupilot_gazebo/worlds:${GAZEBO_RESOURCE_PATH}' >> ~/.bashrc
+source ~/.bashrc
+```
+
+
+
+### 6.
 
 ## Usage
 
