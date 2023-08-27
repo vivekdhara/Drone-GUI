@@ -84,8 +84,7 @@
 
 ### Prerequisites
 
-> **[?]**
-> What are the project requirements/dependencies?
+Tested With Ardupilot Stable Release on Ubuntu 18.04.
 
 ### Installation
 
@@ -173,37 +172,11 @@ mamba install numpy h5py Flask flask-socketio geopy folium simplekml branca simp
 
 ## Usage
 
-> **[?]**
-> How does one go about using it?
-> Provide various use cases and code examples here.
+```
+./run ; localhost:5000
 
-## Roadmap
+```
 
-See the [open issues](https://github.com/vivekdhara/drone-gui/issues) for a list of proposed features (and known issues).
-
-- [Top Feature Requests](https://github.com/vivekdhara/drone-gui/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/vivekdhara/drone-gui/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/vivekdhara/drone-gui/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-
-## Support
-
-> **[?]**
-> Provide additional ways to contact the project maintainer/maintainers.
-
-Reach out to the maintainer at one of the following places:
-
-- [GitHub Discussions](https://github.com/vivekdhara/drone-gui/discussions)
-- Contact options listed on [this GitHub profile](https://github.com/vivekdhara)
-
-## Project assistance
-
-If you want to say **thank you** or/and support active development of Drone GUI:
-
-- Add a [GitHub Star](https://github.com/vivekdhara/drone-gui) to the project.
-- Tweet about the Drone GUI.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
-
-Together, we can make Drone GUI **better**!
 
 ## Contributing
 
@@ -211,19 +184,8 @@ First off, thanks for taking the time to contribute! Contributions are what make
 
 
 Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you for being involved!
+, see [the contributors page](https://github.com/vivekdhara/drone-gui/contributors).
 
-## Authors & contributors
-
-The original setup of this repository is by [Vivek Dhara](https://github.com/vivekdhara).
-
-For a full list of all authors and contributors, see [the contributors page](https://github.com/vivekdhara/drone-gui/contributors).
-
-## Security
-
-Drone GUI follows good practices of security, but 100% security cannot be assured.
-Drone GUI is provided **"as is"** without any **warranty**. Use at your own risk.
-
-_For more information and to report security issues, please refer to our [security documentation](docs/SECURITY.md)._
 
 ## License
 
