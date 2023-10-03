@@ -86,7 +86,7 @@ Tested on Fresh Ubuntu 18.04 install (stable ardupilot build)
 Gazebo is an open-source 3D robotics simulator. Gzweb is a WebGL client for Gazebo. It is a front-end graphical interface to gazebo and provides visualization of the simulation even on mobile devices
 
 ```
-sudo apt install gazebo9 libgazebo9-dev
+sudo apt install gazebo9 libgazebo9-dev -y
 ```
 
 ```
@@ -112,6 +112,7 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt update
 sudo apt install ros-melodic-ros-base -y
+source ~/.bashrc && source ~/.bash_profile && source ~/.profile && source ~/.bash_login && source ~/.bash_aliases
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 source /opt/ros/melodic/setup.bash
@@ -125,7 +126,9 @@ rosdep update
 ```
 sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras ros-melodic-mavros-msgs -y
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-sudo bash ./install_geographiclib_datasets.sh   
+sudo bash ./install_geographiclib_datasets.sh
+source ~/.bashrc && source ~/.bash_profile && source ~/.profile && source ~/.bash_login && source ~/.bash_aliases
+  
 ```
 
 
