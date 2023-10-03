@@ -155,6 +155,7 @@ source ~/.bashrc
 
 
 ### 6. Packages (Conda)
+Download installer from: https://github.com/ryanvolz/radioconda
 ```
 bash radioconda-2023.07.26-Linux-x86_64.sh
 mamba install numpy h5py Flask flask-socketio geopy folium simplekml branca simple-websocket pykml tornado rospkg
@@ -165,6 +166,8 @@ mamba install numpy h5py Flask flask-socketio geopy folium simplekml branca simp
 
 
 
+
+```
 
 ```
 sudo apt install curl
@@ -179,7 +182,6 @@ cd ~/gzweb
 git checkout gzweb_1.4.1
 echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
 npm run deploy --- -m
-```
 ```
 
 ## Usage
