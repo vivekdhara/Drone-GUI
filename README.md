@@ -135,13 +135,19 @@ source ~/.bashrc && source ~/.profile
 ### 4. Ardupilot
 
 ```
-git clone https://github.com/r0chin/ardupilot
-git config --global url."https://github.com".insteadOf git://github
-cd ardupilot/
-git submodule update --init --recursive
-sudo Tools/scripts/install-prereqs-ubuntu.sh -y
-sudo ~/.profile
-sim_vehicle.py -v ArduCopter -f gazebo-iris --map --console```
+git clone --recurse-submodules https://github.com/ArduPilot/ardupilot.git
+sudo apt get update
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install gitk git-gui
+cd ardupilot
+Tools/environment_install/install-prereqs-ubuntu.sh -y
+Tools/environment_install/ubuntu-18.04-python3.sh -y
+export PATH="$PATH:/home/drone-gui/.local/bin"
+./waf configure --board sitl
+./waf copter
+cd ~/ardupilot/ArduCopter/
+../Tools/autotest/sim_vehicle.py --map --console
 ```
 
 ### 5. Ardupilot Gazebo Plugin
