@@ -89,21 +89,6 @@ Gazebo is an open-source 3D robotics simulator. Gzweb is a WebGL client for Gaze
 sudo apt install gazebo9 libgazebo9-dev -y
 ```
 
-```
-sudo apt install curl
-` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo apt install
-libjansson-dev libboost-dev imagemagick libtinyxml-dev mercurial cmake build-essential
-nvm install 8
-source ~/.bashrc
-sudo apt install git
-cd ~; git clone https://github.com/osrf/gzweb
-cd ~/gzweb
-git checkout gzweb_1.4.1
-echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
-npm run deploy --- -m
-```
-
 ### 2. ROS 
 
 ```
@@ -146,6 +131,8 @@ Tools/environment_install/ubuntu-18.04-python3.sh -y
 export PATH="$PATH:/home/drone-gui/.local/bin"
 ./waf configure --board sitl
 ./waf copter
+cd ~/ardupilot/Tools/autotest
+sed -i '1s|^.*$|#!/usr/bin/env python3|' sim_vehicle.py
 cd ~/ardupilot/ArduCopter/
 ../Tools/autotest/sim_vehicle.py --map --console
 ```
@@ -172,6 +159,27 @@ source ~/.bashrc
 bash radioconda-2023.07.26-Linux-x86_64.sh
 mamba install numpy h5py Flask flask-socketio geopy folium simplekml branca simple-websocket pykml tornado rospkg
 
+
+
+
+
+
+
+
+```
+sudo apt install curl
+` curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+sudo apt install
+libjansson-dev libboost-dev imagemagick libtinyxml-dev mercurial cmake build-essential
+nvm install 8
+source ~/.bashrc
+sudo apt install git
+cd ~; git clone https://github.com/osrf/gzweb
+cd ~/gzweb
+git checkout gzweb_1.4.1
+echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
+npm run deploy --- -m
+```
 ```
 
 ## Usage
