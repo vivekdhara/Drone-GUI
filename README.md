@@ -186,30 +186,23 @@ npm run deploy --- -m
 ```
 
 ## Usage
-
+run FC + Firmware in GUI screen
 ```
 ./run ; localhost:5000
 
+
+run including FC + Firmware
+
+./run_all ; localhost:5000
 ```
 
 
-## Contributing
-
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
-
-
-Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you for being involved!
-, see [the contributors page](https://github.com/vivekdhara/drone-gui/contributors).
 
 
 ## License
 
 This project is licensed under the **MIT license**.
 
+
 See [LICENSE](LICENSE) for more information.
 
-## Acknowledgements
-
-> **[?]**
-> If your work was funded by any organization or institution, acknowledge their support here.
-> In addition, if your work relies on other software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.
